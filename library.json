@@ -1,5 +1,5 @@
 {
-  "title": "GoTo",
+  "title": "IVGoTo",
   "machineName": "H5P.IVGoTo",
   "majorVersion": 0,
   "minorVersion": 1,
@@ -8,7 +8,7 @@
   "runnable": 0,
   "author": "Oliver Tacke",
   "license": "pd",
-  "description": "allows to goto a different timecode automatically",
+  "description": "allows to go to a different timecode automatically",
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 6
