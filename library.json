@@ -1,0 +1,28 @@
+{
+  "title": "GoTo",
+  "machineName": "H5P.IVGoTo",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 0,
+  "contentType": "Utility",
+  "runnable": 0,
+  "author": "Oliver Tacke",
+  "license": "pd",
+  "description": "allows to goto a different timecode automatically",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 6
+  },
+  "preloadedJs": [
+    {
+      "path": "scripts/iv-goto.js"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.Timecode",
+      "majorVersion": 1,
+      "minorVersion": 1
+    }
+  ]
+}
