@@ -8,9 +8,8 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
    * @param {Object} parameters
    */
   function IVGoTo(parameters) {
-    var self = this;
-
     console.log('IVGOTO');
+    var self = this;
 
     parameters = $.extend(true, {
       destination: {
