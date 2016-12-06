@@ -1,5 +1,5 @@
 H5P IV-GoTo
-==========
+===========
 Goto-interaction for interactive videos of H5P.
 
 Allows you to add an interaction (which isn't really interactive) to H5P interactive videos that will jump to a timecode without any action of the user.

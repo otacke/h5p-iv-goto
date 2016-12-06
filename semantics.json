@@ -1,10 +1,10 @@
 [
   {
-    "name": "time",
+    "name": "gototime",
     "type": "number",
     "widget": "timecode",
     "label": "Go To",
-    "description": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS.",
+    "description": "The target time the user will be taken to automatically. Enter timecode in the format M:SS.",
     "optional": false
   }
 ]

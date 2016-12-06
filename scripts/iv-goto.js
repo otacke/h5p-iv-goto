@@ -1,7 +1,7 @@
 H5P.IVGoTo = (function ($, EventDispatcher) {
 
   /**
-   * Go to a different timecode or web resource
+   * Go to a different timecode
    *
    * @class H5P.IVGoTo
    * @extends H5P.EventDispatcher
@@ -15,7 +15,7 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
     parameters = $.extend(true, {
       destination: {
         type: 'timecode',
-        time: '0'
+        gototime: '0'
       },
     }, parameters);
 
@@ -28,7 +28,7 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
      */
     self.attach = function ($container) {
       console.log('IVGoTo attached.');
-      // self.trigger('goto', parameters.destination.time);
+      // self.trigger('goto', parameters.destination.gototime);
     };
   }
 
