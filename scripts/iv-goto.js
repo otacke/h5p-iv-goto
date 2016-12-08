@@ -10,14 +10,6 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
   function IVGoTo(parameters) {
     console.log('IVGOTO');
     var self = this;
-
-    parameters = $.extend(true, {
-      destination: {
-        type: 'timecode',
-        gototime: '0'
-      },
-    }, parameters);
-
     EventDispatcher.call(self);
 
     /**
@@ -26,8 +18,11 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
      * @param {H5P.jQuery} $container
      */
     self.attach = function ($container) {
-      console.log('IVGoTo attached.');
-      // self.trigger('goto', parameters.destination.gototime);
+      // TODO: Change bubble color on toolbar
+      // TODO: Make the box invisible
+      if (this.parent.editor === undefined) {
+        self.trigger('goto', parameters.gototime);
+      }
     };
   }
 

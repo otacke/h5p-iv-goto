@@ -18,6 +18,11 @@
       "path": "scripts/iv-goto.js"
     }
   ],
+  "preloadedCss": [
+    {
+      "path": "styles/iv-goto.css"
+    }
+  ],
   "editorDependencies": [
     {
       "machineName": "H5PEditor.Timecode",
