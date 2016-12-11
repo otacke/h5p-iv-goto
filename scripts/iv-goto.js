@@ -8,7 +8,6 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
    * @param {Object} parameters
    */
   function IVGoTo(parameters) {
-    console.log('IVGOTO');
     var self = this;
     EventDispatcher.call(self);
 
@@ -18,8 +17,20 @@ H5P.IVGoTo = (function ($, EventDispatcher) {
      * @param {H5P.jQuery} $container
      */
     self.attach = function ($container) {
-      // TODO: Change bubble color on toolbar
-      // TODO: Make the box invisible
+      if (this.parent.editor === undefined) {
+        $container.addClass('h5p-ivgoto').css({
+          backgroundColor: 'rgba(255, 255, 255, 0)'
+        });
+      }
+      else {
+        // TODO: make nice
+        // TODO: rescale box
+        $container.addClass('h5p-ivgoto').css({
+          backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        });
+      }
+
+      // TODO: trigger flash
       if (this.parent.editor === undefined) {
         self.trigger('goto', parameters.gototime);
       }
